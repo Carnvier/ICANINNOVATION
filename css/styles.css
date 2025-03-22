@@ -271,7 +271,7 @@ footer {
 
 .contact-image{
     width: 100%;
-    background-image: url(/images/structure.jpg);
+    background-image: url(/images/footer.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -361,10 +361,9 @@ footer .rights{
     width: 100%;
     color: white;
     text-align: justify;
-    height: 100%;
     gap:0;
     background-color: rgba(0, 0, 0, 0.179);
-    
+    position: relative;
 }
 
 .about-us{
@@ -443,8 +442,8 @@ footer .rights{
 }
 
 .story-section p{
-    margin-top: 35px;
-    font-size: 1.2rem;
+    margin-top: 20px;
+    font-size: 1.1rem;
     text-align: justify;
     border: 2px solid transparent; /* Set border to transparent */
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Adjust the blur and color */
@@ -543,13 +542,13 @@ footer .rights{
     margin: 15px;
     padding: 20px;
     width: 310px;
-    height: 400px;
+    height: 420px;
     vertical-align: top;
 }
 
 .profile-photo {
     min-width: 50px;
-    width: 35%;
+    width: 32%;
     border-radius: 50%;
     height: 24%
 }
@@ -694,6 +693,7 @@ footer .rights{
 
 .program-lot li {
     margin-bottom: 10px; /* Space between list items */
+    list-style: none;
 }
 
 .program-lot strong {

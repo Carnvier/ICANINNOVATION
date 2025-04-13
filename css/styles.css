@@ -4,25 +4,24 @@
     box-sizing: border-box;
 }
 
-.grid-container{
+.grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-bottom: 5px;
-    gap:0
+    gap: 0;
 }
 
-.text-center{
+.text-center {
     text-align: center;
 }
 
-.text-justify{
+.text-justify {
     text-align: justify;
 }
 
-.pt-10{
+.pt-10 {
     padding-top: 10px;
 }
-
 
 body {
     font-family: Arial, sans-serif;
@@ -30,30 +29,36 @@ body {
     background-color: #f9f9f9;
 }
 
-nav{
+nav {
     width: 100%;
+    height: 64px;
     background-color: black;
     color: white;
-    
     font-size: 1.2em;
     border-bottom: 1px solid #e9ecef;
 }
 
-.logo-container{
+.logo-container {
     text-align: left;
-    
-    
 }
 
-.nav-container{
+.nav-container {
     display: flex;
     justify-content: right;
     margin-top: -45px;
     padding: 10px;
 }
 
-nav .logo{
-    width:120px;
+
+.nav-toggle {
+    display: none; /* Hide toggle button initially */
+    cursor: pointer; /* Pointer cursor for toggle */
+    font-size: 1.5em; /* Size of toggle icon */
+    color: white; /* Color of toggle icon */
+}
+
+nav .logo {
+    width: 120px;
     height: 55px;
     background: url(/images/logo.jpg);
     background-repeat: no-repeat;
@@ -64,17 +69,15 @@ nav .logo{
     margin-top: 4px;
     margin-bottom: -10px;
     margin-left: 5px;
-
 }
 
-
-nav li{
+nav li {
     display: inline-block;
     list-style: none;
     margin-left: 15px;
 }
 
-nav li>a {
+nav li > a {
     color: white;
     text-decoration: none;
 }
@@ -87,14 +90,11 @@ nav li>a {
     text-align: center;
 }
 
-
-
-.hero{
-    z-index:    2;
+.hero {
+    z-index: 2;
     background-color: rgba(0, 0, 0, 0.4);
     width: 100%;
-    padding: 10%
-    
+    padding: 10%;
 }
 
 .hero h1 {
@@ -121,39 +121,38 @@ button {
 button:hover {
     background-color: #000000;
     color: white;
-    border: 2px white solid
+    border: 2px white solid;
 }
 
 main {
     padding: 20px;
 }
 
-.mission{
+.mission {
     background-color: #000000e6;
     padding: 20px;
     color: white;
     text-align: justify;
-    border-radius: 0 0 10px 10px ;
+    border-radius: 0 0 10px 10px;
 }
 
-.mission>h2{
+.mission > h2 {
     text-align: center;
     margin-bottom: 10px;
     font-size: 2.1rem;
 }
 
-.ceo-message{
+.ceo-message {
     background: url('/images/ceo-msg-bg.jpg');
     background-size: cover;
     background-position: center;
     color: white;
     margin: 20px auto;
     border-radius: 10px;
-    
 }
 
 .ceo-message > div {
-    background-color:rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.4);
     padding: 20px;
     border-radius: 10px;
 }
@@ -170,7 +169,7 @@ main {
     font-size: 1.05rem;
 }
 
-.ceo-message > div p strong{
+.ceo-message > div p strong {
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -186,13 +185,12 @@ main {
     width: 95vw;
 }
 
-.flex-container>a{
+.flex-container > a {
     text-decoration: none;
 }
 
-a > .programs-card-home{
+a > .programs-card-home {
     color: black;
-    
 }
 
 .programs-card-home {
@@ -210,7 +208,7 @@ a > .programs-card-home{
     height: 200px;
     border-radius: 10px 10px 0px 0px;
     display: block;
-    margin: auto
+    margin: auto;
 }
 
 .programs-card-home h3 {
@@ -219,14 +217,14 @@ a > .programs-card-home{
     padding: 10px;
 }
 
-.programs-card-home>figcaption{
+.programs-card-home > figcaption {
     margin-top: -20px;
     font-size: 0.88rem;
     padding: 10px;
     text-align: justify;
 }
 
-.call-to-action{
+.call-to-action {
     padding: 20px;
     background-color: #002953;
     color: white;
@@ -234,11 +232,10 @@ a > .programs-card-home{
     margin-top: 50px;
 }
 
-.call-to-action h2{
+.call-to-action h2 {
     font-size: 2.1rem;
     margin-bottom: 10px;
 }
-
 
 .testimonials {
     text-align: center;
@@ -248,28 +245,20 @@ a > .programs-card-home{
     border-radius: 10px;
 }
 
-
 footer {
     text-align: center;
     background-color: #ffffff;
-    box-shadow: 0 3cqh 5px rgba(0, 0, 0, 0.1) ;
+    box-shadow: 0 3cqh 5px rgba(0, 0, 0, 0.1);
     border: 2px solid rgb(234, 234, 234);
-    border-top: 1px solid rgb(234, 234, 234) ;
+    border-top: 1px solid rgb(234, 234, 234);
     border-radius: 10px;
     box-sizing: content-box;
     margin: 20px;
     color: black;
-    width: calc(100vw -40px);
+    width: calc(100vw - 40px);
 }
 
-.grid-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
-    
-}
-
-.contact-image{
+.contact-image {
     width: 100%;
     background-image: url(/images/footer.jpg);
     background-position: center;
@@ -278,49 +267,48 @@ footer {
     border-radius: 10px 0px 0px 10px;
 }
 
-.details{
+.details {
     padding: 20px;
     text-align: justify;
     font-weight: 500;
 }
 
-.details>h1{
+.details > h1 {
     text-align: center;
     margin-bottom: 10px;
 }
 
-.phone-numbers-section{
+.phone-numbers-section {
     margin: 20px 0;
-    padding:0 0 20px 0; 
+    padding: 0 0 20px 0;
 }
 
-.phone-number{
+.phone-number {
     text-align: justify;
     font-weight: bold;
 }
 
-.email{
-    padding:0 0 20px 0;
+.email {
+    padding: 0 0 20px 0;
 }
 
-
-.address>p{
+.address > p {
     width: 50%;
     text-align: left;
 }
 
-footer hr{
+footer hr {
     width: 90%;
     height: 2px;
     background-color: black;
-    margin: 5px 0
+    margin: 5px 0;
 }
 
-footer span{
-    margin-top: 100px
+footer span {
+    margin-top: 100px;
 }
 
-footer .rights{
+footer .rights {
     text-align: center;
     font-weight: bold;
     font-style: oblique;
@@ -334,54 +322,52 @@ footer .rights{
     border-radius: 10px;
     padding: 10px;
     display: inline-block;
-    position:sticky;
+    position: sticky;
 }
 
-.testimony{
+.testimony {
     margin-top: 20px;
     margin-bottom: 5px;
     text-align: justify;
 }
 
-.author-credentials{
+.author-credentials {
     font-size: 1rem;
     text-align: right;
 }
 
-
 /* About us page */
 
-.about-us-header{
+.about-us-header {
     text-align: center;
-    width: 100%;    
+    width: 100%;
     box-sizing: content-box;
 }
 
-.about-us-section{
+.about-us-section {
     width: 100%;
     color: white;
     text-align: justify;
-    gap:0;
+    gap: 0;
     background-color: rgba(0, 0, 0, 0.179);
     position: relative;
 }
 
-.about-us{
+.about-us {
     background: url('/images/about-us.jpg');
     background-position: center;
     background-size: cover;
-    filter:blur();
+    filter: blur();
 }
 
-.about-us>div{
+.about-us > div {
     background-color: #0000004e;
     padding: 50px;
     height: 100%;
     width: 100%;
-    
 }
 
-.about-us h1{
+.about-us h1 {
     font-size: 3rem;
     margin-top: -25px;
     font-style: oblique;
@@ -391,7 +377,7 @@ footer .rights{
     padding-right: 10px;
 }
 
-.stats-container{
+.stats-container {
     width: 100%;
     margin-top: 25px;
     font-size: 1.25rem;
@@ -399,7 +385,7 @@ footer .rights{
     z-index: 1;
 }
 
-.stats-container div{
+.stats-container div {
     width: 45%;
     padding: 10px;
     height: 170px;
@@ -409,50 +395,49 @@ footer .rights{
     text-align: center;
     border: 2px solid transparent; /* Set border to transparent */
     box-shadow: 0 0 10px rgba(0, 0, 255, 0.5); /* Adjust the blur and color */
-    border-radius: 10px; 
+    border-radius: 10px;
 }
 
-.stat-value{
+.stat-value {
     font-size: 3rem;
     margin-bottom: 10px;
     margin-bottom: -10px;
 }
 
-.story-section{
+.story-section {
     background: url('/images/offroad-sunset.jpg');
     background-position: center;
     background-size: cover;
 }
 
-.story-section>div{
+.story-section > div {
     background-color: #00000085;
     padding: 50px;
     height: 100%;
     width: 100%;
-    font-weight: bold ;
+    font-weight: bold;
     display: block;
     margin: auto;
 }
 
-.story-section h2{
+.story-section h2 {
     font-size: 3rem;
     margin-top: 60px;
     text-decoration: overline;
-    text-align: right;   
+    text-align: right;
 }
 
-.story-section p{
+.story-section p {
     margin-top: 20px;
     font-size: 1.1rem;
     text-align: justify;
     border: 2px solid transparent; /* Set border to transparent */
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Adjust the blur and color */
-    border-radius: 5px; 
+    border-radius: 5px;
     padding: 20px;
 }
 
-
-.vision-mission{
+.vision-mission {
     text-align: center;
     background: linear-gradient(60deg, #002953 0%, #333 75%);
     color: white;
@@ -461,51 +446,49 @@ footer .rights{
     margin-top: 10px;
 }
 
-.vision-mission div{
-    margin:  20px auto;
+.vision-mission div {
+    margin: 20px auto;
 }
 
-.core-values{
-    margin: 20px auto;  
+.core-values {
+    margin: 20px auto;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Adjust the blur and color */
     border-radius: 20px;
     color: white;
-
 }
 
-.core-values .head-container{
+.core-values .head-container {
     font-size: 2rem;
     background: url('/images/core-values-head.jpg');
     border-radius: 20px 20px 0 0;
     background-size: cover;
     background-position: center;
-    height: 300px
+    height: 300px;
 }
 
-.core-values > .head-container > h2{
+.core-values > .head-container > h2 {
     background-color: #00000085;
     height: 100%;
     width: 100%;
     border-radius: 20px 20px 0 0;
     text-align: center;
-    padding: 10%
+    padding: 10%;
 }
 
-.core-values .values-container{ 
+.core-values .values-container {
     background: url('/images/core-values-bg.jpg');
     background-size: cover;
     background-position: center;
     border-radius: 0 0 20px 20px;
 }
 
-.core-values > .values-container > ul{
+.core-values > .values-container > ul {
     padding: 30px;
     background-color: #000000b8;
     height: 100%;
     width: 100%;
-    border-radius: 0 0  20px 20px;
+    border-radius: 0 0 20px 20px;
 }
-
 
 /* Team section */
 
@@ -518,12 +501,12 @@ footer .rights{
     border: 2px solid transparent;
 }
 
-.team-body > .intro-statement{
+.team-body > .intro-statement {
     padding: 20px;
     text-align: center;
 }
 
-.team-heading{
+.team-heading {
     font-size: 2rem;
 }
 
@@ -533,7 +516,6 @@ footer .rights{
     text-align: center;
     padding: 0px;
 }
-
 
 .team-card {
     background: white;
@@ -550,7 +532,7 @@ footer .rights{
     min-width: 50px;
     width: 32%;
     border-radius: 50%;
-    height: 24%
+    height: 24%;
 }
 
 .name {
@@ -569,10 +551,9 @@ footer .rights{
     text-align: justify;
 }
 
-
-.impact-section{
+.impact-section {
     margin: 10px auto 0 auto;
-    background: linear-gradient(50deg, #002953,  #03081c);
+    background: linear-gradient(50deg, #002953, #03081c);
     color: white;
     padding: 20px;
     border-radius: 20px 20px 0 0;
@@ -580,29 +561,27 @@ footer .rights{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Adjust the blur and color */
 }
 
-.impact-section h2{
+.impact-section h2 {
     text-align: center;
     font-size: 1.7rem;
 }
 
-.impact-section ul{
+.impact-section ul {
     list-style: none;
 }
 
-.impact-section ul li{
+.impact-section ul li {
     margin: 20px auto;
 }
 
-.impact-section ul li:nth-child(2){
+.impact-section ul li:nth-child(2) {
     text-align: right;
 }
 
-.impact-section ul li i{
+.impact-section ul li i {
     font-size: 3rem;
     margin: 5px 0;
 }
-
-
 
 /* programs styling */
 .thematic-areas-section {
@@ -610,23 +589,21 @@ footer .rights{
     background-position: center;
     background-size: cover;
     color: white;
-  
 }
 
-.thematic-areas-section > div{
+.thematic-areas-section > div {
     background-color: #000000b3;
     padding: 40px;
     height: 100%;
     width: 100%;
 }
 
-.thematic-areas-section > div > h2{
+.thematic-areas-section > div > h2 {
     font-size: 2.5rem;
     margin: 31px auto;
     text-decoration: overline;
     text-align: center;
 }
-
 
 .thematic-areas-section > div > ol > li {
     width: 40%;
@@ -638,11 +615,11 @@ footer .rights{
     margin: 10px;
     height: 90px;
     align-items: center;
-    border-style:ridge;
+    border-style: ridge;
     font-weight: bold;
 }
 
-.thematic-areas-section > div > ol > li:hover{
+.thematic-areas-section > div > ol > li:hover {
     background-color: #f2f2f2b9;
     color: #000000;
     border: 2px solid #000000;
@@ -663,7 +640,6 @@ footer .rights{
     font-size: 1.8rem;
 }
 
-
 .program-lot {
     background-color: #e9ecef;
     padding: 15px;
@@ -678,7 +654,7 @@ footer .rights{
     height: 200px;
     border-radius: 10px 10px 0px 0px;
     display: block;
-    margin: auto
+    margin: auto;
 }
 
 .program-lot h3 {
@@ -700,8 +676,6 @@ footer .rights{
     color: #333; /* Different color for criteria */
 }
 
-
-
 /* Get involved section */
 
 .get-involved-header {
@@ -711,19 +685,17 @@ footer .rights{
     text-align: center;
 }
 
-
-
-.highlights{
+.highlights {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     box-sizing: content-box;
     margin-bottom: 20px;
 }
 
-.highlights> h2{
+.highlights > h2 {
     padding: 20px;
 }
 
-.highlights div{
+.highlights div {
     margin: 10px auto;
 }
 
@@ -766,4 +738,234 @@ footer .rights{
 
 .button:hover {
     background-color: #042140;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .programs-card-home {
+        width: 30%;
+    }
+
+    .program-lot {
+        width: 30%;
+    }
+
+    .team-card {
+        width: 30%;
+    }
+
+    .stats-container div {
+        width: 40%;
+    }
+}
+
+@media (max-width: 1040px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .programs-card-home {
+        width: 40%;
+    }
+
+    .program-lot {
+        width: 40%;
+    }
+
+    .team-card {
+        width: 40%;
+    }
+
+    .stats-container div {
+        width: 30%;
+    }
+}
+
+
+
+@media (max-width: 838px) {
+    nav .nav-container {
+        flex-direction: column;
+        align-items: end;
+
+    }
+
+    nav li {
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+
+    .about-us h1 {
+        font-size: 2.5rem;
+    }
+
+    .impact-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .core-values .head-container {
+        height: 200px;
+    }
+
+    .core-values > .head-container > h2 {
+        font-size: 1.5rem;
+    }
+
+    .team-heading {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-container {
+        display: none; /* Hide nav items by default */
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center align items */
+        position: absolute; /* Position dropdown */
+        top: 100px; /* Position below the nav bar */
+        right: 0; /* Align left */
+        background-color: black; /* Background color */
+        z-index: 1; /* Ensure dropdown is above other elements */
+    }
+
+    .nav-container.active {
+        display: flex; /* Show nav items when active */
+    }
+
+    .nav-toggle {
+        display: inline-block; /* Show toggle button on smaller screens */
+        width: fit-content;
+        position: absolute;
+        right: 10px
+        
+    }
+
+    nav li {
+        display: block; /* Change to block for dropdown effect */
+        margin-left: 0; /* Remove left margin */
+        margin-bottom: 10px; /* Add bottom margin for spacing */
+    }
+
+    .logo-container{
+        display: inline-block;
+    }
+
+    .thematic-areas-section > div{
+        padding: 0;
+    }
+
+    .thematic-areas-section > div > ol > li {
+        height: fit-content;
+        width: 80%;
+        display: block;
+    }
+
+    .programs-card-home {
+        width: 90%;
+        gap: 0;
+        display: block;
+        
+    }
+
+    div.program-lots{
+        padding: 0;
+        display: block;
+        width: 100%;
+    }
+
+    .program-lot {
+        width: 90%;
+        gap: 0;
+        display: block;
+
+
+    }
+
+    .team-card {
+        width: 90%;
+        gap: 0;
+        display: block;
+        height: fit-content
+    }
+
+    .story-section  p{
+        font-size: 1rem;
+        text-align:center;
+        font-weight: normal;
+    }
+
+    .stats-container div {
+        width: 90%;
+    }
+
+    .flex-container > img{
+        width: 45%;
+        margin-bottom: 20px;
+    }
+
+    footer p {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .mission > h2 {
+        font-size: 1.5rem;
+    }
+
+    .call-to-action h2 {
+        font-size: 1.5rem;
+    }
+
+    .stats-container {
+        font-size: 1rem;
+    }
+
+    .program-lot {
+        height: auto;
+    }
+
+    .program-lot h3 {
+        font-size: 1rem;
+    }
+
+    .about-us h1 {
+        font-size: 2rem;
+    }
+
+    button {
+        width: 100%;
+        padding: 15px;
+    }
+    
+    .flex-container > img{
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
 }

@@ -32,3 +32,12 @@ function scrollRight() {
         behavior: 'smooth'
     });
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+    const toggleButton = document.querySelector('.nav-toggle');
+    const navContainer = document.querySelector('.nav-container');
+
+    toggleButton.addEventListener('click', function () {
+        navContainer.classList.toggle('active'); // Toggle the active class
+    });
+});

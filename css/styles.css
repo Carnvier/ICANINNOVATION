@@ -645,7 +645,7 @@ footer .rights {
     padding: 15px;
     border-radius: 5px;
     width: 30%;
-    height: 290px;
+    height: 310px;
     margin: 10px;
 }
 
@@ -669,6 +669,9 @@ footer .rights {
 
 .program-lot li {
     margin-bottom: 10px; /* Space between list items */
+}
+
+.no-list-styling{
     list-style: none;
 }
 
